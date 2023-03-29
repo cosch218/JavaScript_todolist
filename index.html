@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 시계 -->
+    <div id="calendar">
+        <h2 id="date">yyyy.bb.dd</h2>
+        <h2 id="day">day</h2>
+    </div>
+    <h1 id="clock">00:00:00</h1>
+
+    <!-- 로그인 입력창(로그인 후에 보이지 않음) -->
+    <form id="login-form" action="">
+        <input id="login-id" type="text" placeholder="Id" required><br>
+        <input id="login-password" type="password" placeholder="password" required><br>
+        <input id="login-btn" type="submit" value="Login">
+    </form>
+
+    <!-- 환영 문구(로그인 후에 보임) -->
+    <h2 id="greeting" class="hidden">환영합니다</h2>
+
+    <!-- 투두 리스트 입력창 -->
+    <form id="todo-form"  class="hidden" action="">
+        <input type="text" placeholder="할 일을 입력해주세요" required>
+        <input type="submit" value="+">
+    </form>
+
+    <!-- 할 일의 총 개수와 완료한 할 일 -->
+    <div id="count-box" class="hidden">
+        <h3 id="count">함수 사용 : 0개 중 0개 완료</h3>
+        <h3 id="count2">계산식 사용 : 0개 중 0개 완료</h3>
+    </div>
+
+    <!-- 입력한 투두 리스트가 추가될 공간 -->
+    <ul id="todolist" class="hidden">
+        <li>
+            <input type="checkbox" id="">
+            <span>값</span>
+            <span>생성시간</span>
+            <button>X</button>
+        </li>
+    </ul>
+
+
+    <script src="./js/background.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/todolist.js"></script>
+</body>
+</html>

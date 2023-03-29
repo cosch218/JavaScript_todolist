@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* JS로 태그를 숨기기 위해 작성 */
+.hidden {
+    display: none;
+}
+
+
+/* 태그에 대한 디자인 */
+body {
+    font-family: 'ONE-Mobile-Regular';
+    text-align: center;
+    color: rgb(42, 41, 48);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 0 0 100px rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+    font-weight: bold;
+    text-shadow: 0 0 100px rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: 0;
+}
+
+input[type="submit"]:hover, input[type="checkbox"], button:hover {
+    cursor: pointer;
+}
+
+/* 각각 id에 따른 디자인 */
+#calendar {
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+}
+
+#calendar h2 {
+    display: inline-block;
+}
+
+#login-form {
+    margin: 130px 0;
+
+}
+
+#login-form input[type="text"], input[type="password"] {
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 30px;
+    padding: 8px;
+    width: 250px;
+    margin: 3px 0;
+}
+
+#login-form input[type="submit"] {
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(42, 41, 48);
+    padding: 8px;
+    width: 250px;
+    box-sizing: border-box;
+    margin-top: 13px;
+}
+
+#greeting {
+    font-size: 2rem;
+    margin: 130px 0;
+}
+
+
+#todo-form input[type="text"] {
+    background-color: rgb(255, 255, 255,0.6);
+    border: none;
+    border-radius: 30px;
+    width: 350px;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+}
+
+#todo-form input[type="text"]::placeholder {
+    color: rgba(42, 41, 48, 0.7);
+
+}
+
+#todo-form input[type="submit"] {
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(42, 41, 48);
+    transition: all 0.2s;
+    font-size: 1rem;
+    padding: 3px 7.5px;
+}
+
+#todo-form input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(42, 41, 48);
+    transition: all 0.2s;
+}
+
+#count {
+    margin-top: 50px;
+}
+
+#todolist {
+    margin: 50px auto;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255,0.6);
+    padding: 20px 30px 5px 30px;
+    border-radius: 15px;
+}
+
+#todolist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#todolist li:first-child {
+    display: none;
+}
+
+#todolist li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    appearance: none;
+    transition: all 0.2s;
+    border: 1px solid rgb(42, 41, 48);
+}
+
+#todolist li input[type="checkbox"]:checked {
+    background: rgb(109, 93, 192);
+    border: 0;
+}
+#todolist li input[type="checkbox"]:checked:after {
+    content: '\2714'; /* 체크박스 특수문자 */
+    color : white;
+    text-align: center;
+    padding-left: 4px;
+}
+
+#todolist li .spanText {
+    width: 350px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#todolist li .spanTime {
+    font-size: 0.75rem;
+    color: rgb(104, 103, 109);
+}
+
+#todolist button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(42, 41, 48);
+    font-size: 0.7rem;
+}
